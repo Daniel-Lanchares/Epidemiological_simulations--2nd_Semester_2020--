@@ -7,4 +7,4 @@ Modelling is achieved through parameter alteration (and in cases addition of tim
 
 Stochastic simulator, with boards representing the living area, hospital, intensive care & morgue:
 
-!simulator(https://github.com/Daniel-Lanchares/Epidemiological_simulations--2nd_Semester_2020--/blob/main/Stochastic_Simulations/Simulation_example.png?raw=true)
+!simulator(https://raw.githubusercontent.com/Daniel-Lanchares/Epidemiological_simulations--2nd_Semester_2020--/main/Stochastic_Simulations/Simulation_example.png?raw=true)
