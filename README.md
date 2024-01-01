@@ -15,15 +15,16 @@ The program plots real time SIRD[¹] curves that permit the evaluation of measur
 
 ![simulator curves](<https://raw.githubusercontent.com/Daniel-Lanchares/Epidemiological_simulations--2nd_Semester_2020--/main/Stochastic_Simulations/population_density/0.008, False, 5, True, 15.png>)
 
-In contrast the ODE simulator numerically integrates the SIRD equations to directly produce its data. In this example both transmission, recuperation and mortality rates have been promoted to time-dependant parameters to model an upturn in cases (two wave scenario).
+In contrast the ODE simulator numerically integrates the SIRD equations (shown bellow) to directly produce its data. In this example both transmission, recuperation and mortality rates have been promoted to time-dependant parameters to model an upturn in cases (two wave scenario).
 
-$$\{ S'(t,S,I,R,D) \} = \{-tr \cdot S \cdot I \}$$
-
-$$\{ I'(t,S,I,R,D) \} = \{ tr \cdot S \cdot I - (rec+mort)\cdot I	\}$$
-
-$$\{ R'(t,S,I,R,D) \} = \{ rec \cdot I	\}$$
-
-$$\{ D'(t,S,I,R,D) \} = \{ mort \cdot I	\}$$
+$$
+\begin{align*}
+S'(t,S,I,R,D) &= -tr \cdot S \cdot I\\
+I'(t,S,I,R,D) &=  tr \cdot S \cdot I - (rec+mort)\cdot I\\
+R'(t,S,I,R,D) &= rec \cdot I\\
+D'(t,S,I,R,D) &= mort \cdot I
+\end{align*}
+$$
 
 ![simulator curves](<https://raw.githubusercontent.com/Daniel-Lanchares/Epidemiological_simulations--2nd_Semester_2020--/main/ODE_Simulations/Realistic Scenarios/3. Infection upturn.png>)
 
